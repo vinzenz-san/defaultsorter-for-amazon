@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #0f1111;
+        --hint: #565959;
+        --border: #888c8c;
+        --control-bg: #ffffff;
+        --link: #cc6600;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #2b2a33;
+          --text: #f9f9fa;
+          --hint: #b1b1b3;
+          --border: #52525e;
+          --control-bg: #38383d;
+          --link: #ffb14e;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 14px 16px;
+        width: 260px;
+        font-family: system-ui, sans-serif;
+        font-size: 13px;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1 {
+        font-size: 14px;
+        margin: 0 0 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+      .field {
+        margin-bottom: 12px;
+      }
+      .field:last-of-type {
+        margin-bottom: 0;
+      }
+      select {
+        width: 100%;
+        padding: 6px 8px;
+        font-size: 13px;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        background: var(--control-bg);
+        color: var(--text);
+      }
+      p.hint {
+        margin: 10px 0 0;
+        color: var(--hint);
+        font-size: 11px;
+        line-height: 1.4;
+      }
+      a.support-link {
+        display: inline-block;
+        margin-top: 14px;
+        color: var(--link);
+        font-size: 12px;
+        text-decoration: none;
+      }
+      a.support-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 data-i18n="popupTitle"></h1>
+    <div class="field">
+      <label for="sort-select" data-i18n="popupSelectLabel"></label>
+      <select id="sort-select">
+        <option value="default" data-i18n="sortDefault"></option>
+        <option value="bestseller" data-i18n="sortBestseller"></option>
+        <option value="price_asc" data-i18n="sortPriceAsc"></option>
+        <option value="price_desc" data-i18n="sortPriceDesc"></option>
+        <option value="rating" data-i18n="sortRating"></option>
+        <option value="newest" data-i18n="sortNewest"></option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="language-select" data-i18n="popupLanguageLabel"></label>
+      <select id="language-select">
+        <option value="auto" data-i18n="languageAuto"></option>
+        <option value="de" data-i18n="languageDe"></option>
+        <option value="en" data-i18n="languageEn"></option>
+      </select>
+    </div>
+    <p class="hint" data-i18n="popupHint"></p>
+    <a
+      class="support-link"
+      data-i18n="supportLink"
+      href="https://buymeacoffee.com/vinzenz.san"
+      target="_blank"
+      rel="noopener noreferrer"
+    ></a>
+    <script src="browser-polyfill.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

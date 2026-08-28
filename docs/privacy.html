@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DefaultSorter for Amazon</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 2026-08-28</p>
+
+    <p>DefaultSorter for Amazon is a browser extension (Firefox &amp; Chrome) that lets you choose a default sort order (e.g. Best Sellers) for Amazon search results, instead of Amazon's own "Featured" default. This policy explains what the extension accesses and why.</p>
+
+    <h2>Summary</h2>
+    <div class="card">
+      <ul>
+        <li>The extension does not operate its own server, does not use analytics, and does not transmit any of your data anywhere.</li>
+        <li>It makes no network requests of its own. It only rewrites the destination of navigations you already make to Amazon search pages, adding a sort-order query parameter before the page loads.</li>
+        <li>Your chosen sort order and language preference are stored only in your browser's local extension storage (<code>browser.storage.local</code>), via the standard <code>storage</code> permission. None of this leaves your device.</li>
+        <li>The extension only acts on Amazon search-result pages (<code>amazon.&lt;tld&gt;/s?...</code>) on the supported Amazon domains listed in <code>manifest.json</code>. It does not run on, read, or access any other website.</li>
+        <li>No account, sign-in, or personal information is required or collected.</li>
+      </ul>
+    </div>
+
+    <h2>Permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>Why it's needed</th></tr>
+      <tr>
+        <td><code>storage</code></td>
+        <td>Saves your chosen default sort order and language preference locally so they persist between browser sessions.</td>
+      </tr>
+      <tr>
+        <td><code>declarativeNetRequest</code></td>
+        <td>Rewrites the URL of an Amazon search-result navigation to include your chosen sort parameter, before the page loads — this is what avoids a visible reload/flicker on the normal (non-JavaScript-driven) search path.</td>
+      </tr>
+      <tr>
+        <td><code>webNavigation</code></td>
+        <td>Detects the rare case where Amazon renders a search result via client-side JavaScript navigation (e.g. clicking a search-suggestion) rather than a full page load, so <code>declarativeNetRequest</code> never sees a request to rewrite. Used only to notice this happened, not to read browsing history.</td>
+      </tr>
+      <tr>
+        <td><code>tabs</code></td>
+        <td>Used together with <code>webNavigation</code> above: forces a real reload with the sort parameter applied for the client-side-navigation case described above.</td>
+      </tr>
+      <tr>
+        <td>Host access to the supported Amazon domains (see <code>manifest.json</code>)</td>
+        <td>Required for the two permissions above to apply — the extension only acts on Amazon search-result pages on these domains, and does not run on any other site.</td>
+      </tr>
+    </table>
+
+    <h2>Third parties</h2>
+    <p>DefaultSorter for Amazon is an independent, unofficial project and is not affiliated with or endorsed by Amazon. It does not share your data with Amazon, advertisers, or any other third party — it has no mechanism to do so.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the "Last updated" date above will be revised and the change will be reflected in the extension's <a href="https://github.com/vinzenz-san/defaultsorter-for-amazon">GitHub repository</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions can be raised via the <a href="https://github.com/vinzenz-san/defaultsorter-for-amazon/issues">GitHub issue tracker</a>.</p>
+
+    <footer>
+      <a href="./index.html">Home</a>
+      <a href="https://github.com/vinzenz-san/defaultsorter-for-amazon">Source Code</a>
+    </footer>
+  </div>
+</body>
+</html>

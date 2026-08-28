@@ -1,0 +1,66 @@
+{
+  "extName": {
+    "message": "DefaultSorter for Amazon",
+    "description": "Extension name shown in the browser toolbar/about:addons"
+  },
+  "extDescription": {
+    "message": "Erzwingt bei Amazon-Suchergebnissen eine frei wählbare Standardsortierung (z.B. Bestseller) statt 'Empfohlen'.",
+    "description": "Extension description shown in about:addons"
+  },
+  "popupTitle": {
+    "message": "DefaultSorter for Amazon",
+    "description": "Popup heading"
+  },
+  "popupSelectLabel": {
+    "message": "Suchergebnisse sortieren nach",
+    "description": "Label above the sort dropdown"
+  },
+  "popupHint": {
+    "message": "Gilt für Suchergebnisse auf allen unterstützten Amazon-Domains. Manuell gewählte Sortierungen werden nicht überschrieben.",
+    "description": "Hint text below the dropdown"
+  },
+  "sortDefault": {
+    "message": "Empfohlen (Amazon-Standard)",
+    "description": "Dropdown option: no override"
+  },
+  "sortBestseller": {
+    "message": "Bestseller",
+    "description": "Dropdown option"
+  },
+  "sortPriceAsc": {
+    "message": "Preis: aufsteigend",
+    "description": "Dropdown option"
+  },
+  "sortPriceDesc": {
+    "message": "Preis: absteigend",
+    "description": "Dropdown option"
+  },
+  "sortRating": {
+    "message": "Durchschn. Kundenbewertung",
+    "description": "Dropdown option"
+  },
+  "sortNewest": {
+    "message": "Neuheiten",
+    "description": "Dropdown option"
+  },
+  "popupLanguageLabel": {
+    "message": "Sprache",
+    "description": "Label above the language dropdown"
+  },
+  "languageAuto": {
+    "message": "Automatisch (Browsersprache)",
+    "description": "Language dropdown option: follow browser UI language"
+  },
+  "languageDe": {
+    "message": "Deutsch",
+    "description": "Language dropdown option"
+  },
+  "languageEn": {
+    "message": "Englisch",
+    "description": "Language dropdown option"
+  },
+  "supportLink": {
+    "message": "☕ Projekt unterstützen",
+    "description": "Donation link text"
+  }
+}

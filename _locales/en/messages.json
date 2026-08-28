@@ -1,0 +1,66 @@
+{
+  "extName": {
+    "message": "DefaultSorter for Amazon",
+    "description": "Extension name shown in the browser toolbar/about:addons"
+  },
+  "extDescription": {
+    "message": "Forces a chosen default sort order (e.g. Best Sellers) on Amazon search results instead of 'Featured'.",
+    "description": "Extension description shown in about:addons"
+  },
+  "popupTitle": {
+    "message": "DefaultSorter for Amazon",
+    "description": "Popup heading"
+  },
+  "popupSelectLabel": {
+    "message": "Sort search results by",
+    "description": "Label above the sort dropdown"
+  },
+  "popupHint": {
+    "message": "Applies to search results on all supported Amazon domains. Manually chosen sort orders are never overridden.",
+    "description": "Hint text below the dropdown"
+  },
+  "sortDefault": {
+    "message": "Featured (Amazon default)",
+    "description": "Dropdown option: no override"
+  },
+  "sortBestseller": {
+    "message": "Best Sellers",
+    "description": "Dropdown option"
+  },
+  "sortPriceAsc": {
+    "message": "Price: Low to High",
+    "description": "Dropdown option"
+  },
+  "sortPriceDesc": {
+    "message": "Price: High to Low",
+    "description": "Dropdown option"
+  },
+  "sortRating": {
+    "message": "Avg. Customer Review",
+    "description": "Dropdown option"
+  },
+  "sortNewest": {
+    "message": "Newest Arrivals",
+    "description": "Dropdown option"
+  },
+  "popupLanguageLabel": {
+    "message": "Language",
+    "description": "Label above the language dropdown"
+  },
+  "languageAuto": {
+    "message": "Auto (browser language)",
+    "description": "Language dropdown option: follow browser UI language"
+  },
+  "languageDe": {
+    "message": "German",
+    "description": "Language dropdown option"
+  },
+  "languageEn": {
+    "message": "English",
+    "description": "Language dropdown option"
+  },
+  "supportLink": {
+    "message": "☕ Support this project",
+    "description": "Donation link text"
+  }
+}
