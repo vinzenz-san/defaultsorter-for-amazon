@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.1 — 2026-08-28
+
+Popup's "Support this project" link is now centered instead of left-aligned.
+
 ## 0.7.0 — 2026-08-28
 
 Toolbar icon and secondary logo mark finalized (sort-bars icon, bag-with-bars logo — both self-rendered, no Amazon trademark involved). Chrome support added via `webextension-polyfill`, vendored and loaded through `background.js`'s own `importScripts()` guard for Chrome's MV3 service worker. Release tooling: `pnpm release` packages Firefox/Chrome/source zips into `release/`, `pnpm dev:chrome` / `dev:firefox` stage a ready-to-load-unpacked folder at `dist-unpacked/<target>`. Docs site added: `docs/privacy.html`, `docs/store-listing.md`, and a landing page at `docs/index.html`.
