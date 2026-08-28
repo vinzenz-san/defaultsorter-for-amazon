@@ -2,3 +2,4 @@ node_modules/
 release/
 dist-unpacked/
 *.log
+z_*.bat
