@@ -1,13 +1,16 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
   "browser_specific_settings": {
     "gecko": {
       "id": "defaultsorter-for-amazon@vinzenz-dev.de",
-      "strict_min_version": "113.0"
+      "strict_min_version": "113.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "permissions": [

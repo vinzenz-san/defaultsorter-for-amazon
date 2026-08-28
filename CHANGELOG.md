@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.2 — 2026-08-28
+
+Added the `data_collection_permissions` field AMO now requires for new extensions (as of 2025-11-03) — declared as `["none"]` since the extension collects or transmits no personal data.
+
 ## 0.7.1 — 2026-08-28
 
 Popup's "Support this project" link is now centered instead of left-aligned.
